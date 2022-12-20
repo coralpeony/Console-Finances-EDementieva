@@ -90,12 +90,19 @@ var finances = [
 // The total number of months included in the dataset.
 // figure out the length of the main array and print that to the console.
 
-
+let months = finances.length
+console.log("Financial Analysis:")
+console.log("Total Months: " + months);
 
 
 // The net total amount of profit/Losses over the entire period.
 // add up all the profit/Losses
 
+let sum = 0;
+for (var i = 0; i < finances.length; i++) {
+  sum += finances[i][1];
+}
+console.log("Total: $" + sum);
 
 
 // The average of the changes  in Profit/Losses over the entire period.
