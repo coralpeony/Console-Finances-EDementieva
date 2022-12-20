@@ -87,6 +87,46 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+// The total number of months included in the dataset.
+// figure out the length of the main array and print that to the console.
+
+
+
+
+// The net total amount of profit/Losses over the entire period.
+// add up all the profit/Losses
+
+
+
+// The average of the changes  in Profit/Losses over the entire period.
+// Will need to track what the total change in profits is from month to month and then find the average.
+// (Total/Number of records)
+// a loop
+//   figure out the change between the current month and the last month
+// add that value to a running total
+// divide the running total by the number of months -1
+
+
+
+
+// The greatest increase in profits (date and amount) over the entire period.
+// a loop and then every time in the loop
+//      check if the increase in profits is greater than the greatest one so far
+//   if yes
+//       update the greatest
+//   if not
+//       nothing
+
+
+
+// The greatest decrease in losses (date and amount) over the entire period.
+// a loop and then every time in the loop
+//      check if the decrease in losses is less than the smallest one so far
+//   if yes
+//       update the smallest
+//   if not
+//       nothing
+
 
 
 
