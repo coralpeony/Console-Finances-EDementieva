@@ -131,6 +131,16 @@ console.log("Average Change: $" + averageChange.toFixed(2));
 //   if not
 //       nothing
 
+let greatestIncrease = 0
+let giMonth = ""
+for (var i = 1; i < finances.length; i++) {
+ var currentChange  = finances[i][1] - finances[i-1][1]
+ if (currentChange > greatestIncrease) {
+  greatestIncrease = currentChange;
+  giMonth = finances[i][0];
+ }
+}
+console.log("Greatest Increase in Profits: " + giMonth + " $" + greatestIncrease);
 
 
 // The greatest decrease in losses (date and amount) over the entire period.
@@ -140,6 +150,17 @@ console.log("Average Change: $" + averageChange.toFixed(2));
 //       update the smallest
 //   if not
 //       nothing
+
+let greatestDecrease = 0
+let gdMonth = ""
+for (var i = 1; i < finances.length; i++) {
+ var currentChange  = finances[i][1] - finances[i-1][1]
+ if (currentChange < greatestDecrease) {
+  greatestDecrease = currentChange;
+  gdMonth = finances[i][0];
+ }
+}
+console.log("Greatest Decrease in Profits: " + gdMonth + " $" + greatestDecrease);
 
 
 
