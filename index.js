@@ -113,7 +113,14 @@ console.log("Total: $" + sum);
 // add that value to a running total
 // divide the running total by the number of months -1
 
+let change = 0
+for (var i = 1; i < finances.length; i++) {
+   change += finances[i][1] - finances[i-1][1]
 
+}
+var averageChange = change / (months - 1)
+
+console.log("Average Change: $" + averageChange.toFixed(2));
 
 
 // The greatest increase in profits (date and amount) over the entire period.
